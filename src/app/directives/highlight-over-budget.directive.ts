@@ -5,7 +5,7 @@ import { Directive, computed, input } from '@angular/core';
   host: { '[style.background-color]': 'background()' },
 })
 export class HighlightOverBudgetDirective {
-  /** The expense amount */
+
   appHighlightOverBudget = input.required<number>();
   threshold = input<number>(100);
 
