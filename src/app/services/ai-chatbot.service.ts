@@ -9,11 +9,7 @@ export class AiChatbotService {
   private http = inject(HttpClient);
   private expenseService = inject(ExpenseService);
 
-  /**
-   * Put the URL of the AI agent / webhook you built in the lecture here.
-   * It receives POST { message, expenses } and should answer { reply: string }.
-   * While empty, a built-in local assistant answers from your expense data.
-   */
+
   private readonly agentUrl = '';
 
   ask(message: string): Observable<string> {
