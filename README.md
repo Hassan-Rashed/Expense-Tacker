@@ -1,4 +1,4 @@
-# Expense Tracker (Angular 21)
+# Expense Tracker
 
 ## Run it
 1. Unzip, then from the project root run `npm install`.
