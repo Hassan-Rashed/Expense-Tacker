@@ -12,8 +12,7 @@ export class ExpenseService {
   loading = signal(false);
   error = signal<string | null>(null);
 
-  // json-server may return numeric or string ids. Ids are passed through untouched
-  // (do NOT wrap in Number() if your ids look like "a3f9"); only amount is normalised.
+  
   private normalize(e: Expense): Expense {
     return { ...e, amount: Number(e.amount) };
   }
